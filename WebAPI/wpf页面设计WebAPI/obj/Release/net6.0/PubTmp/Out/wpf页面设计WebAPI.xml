@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>wpf页面设计WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:wpf页面设计WebAPI.APIRespongse.ApiResponse">
+            <summary>
+            响应模型
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.APIRespongse.ApiResponse.ResultCode">
+            <summary>
+             结果编码
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.APIRespongse.ApiResponse.Msg">
+            <summary>
+            结果信息
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.APIRespongse.ApiResponse.ResultData">
+            <summary>
+             数据
+            </summary>
+        </member>
+        <member name="T:wpf页面设计WebAPI.Automapper.AutoMapperSetting">
+            <summary>
+            Model转换
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Automapper.AutoMapperSetting.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:wpf页面设计WebAPI.Controllers.account_Controller">
+            <summary>
+            用户注册控制器
+            </summary>
+        </member>
+        <member name="F:wpf页面设计WebAPI.Controllers.account_Controller.db">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="F:wpf页面设计WebAPI.Controllers.account_Controller.mapper">
+            <summary>
+            AutoMapper
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.account_Controller.#ctor(wpf页面设计WebAPI.DataModel.DailyContext,AutoMapper.IMapper)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="_db"></param>
+            <param name="_mapper"></param>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.account_Controller.Reg(wpf页面设计WebAPI.DTOs.AccountInfoDTO)">
+            <summary>
+             用户注册方法
+            </summary>
+            <param name="accountInfoDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.account_Controller.Login(wpf页面设计WebAPI.DTOs.LoginInfoDTO)">
+            <summary>
+            用户登录方法
+            </summary>
+            <param name="loginInfoDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:wpf页面设计WebAPI.Controllers.MeMoController">
+            <summary>
+            备忘录统计数据控制器
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.#ctor(wpf页面设计WebAPI.DataModel.DailyContext,AutoMapper.IMapper)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="_db"></param>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.GetMeMoData">
+            <summary>
+            获取备忘录数据方法
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.GetMeMoDataDetail">
+            <summary>
+             获取备忘录具体数据方法(首页显示)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.GetMeMoingDataDetail">
+            <summary>
+             获取备忘录具体数据方法(备忘录页显示) (暂时不用)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.AddMeMoData(wpf页面设计WebAPI.DTOs.MeMoInfoDTO)">
+            <summary>
+            加入备忘录数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.EditMeMoData(wpf页面设计WebAPI.DTOs.MeMoInfoDTO)">
+            <summary>
+            更改备忘录数据
+            </summary>
+            <param name="meMoInfoDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.UpdateMeMoStatus(wpf页面设计WebAPI.DTOs.MeMoInfoDTO)">
+            <summary>
+            更新备忘录数据状态
+            </summary>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.SearchMeMo(System.String,System.Nullable{System.Int32})">
+            <summary>
+            搜索备忘录数据
+            </summary>
+            <param name="title"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.MeMoController.DeleteMeMoData(System.Int32)">
+            <summary>
+            删除备忘录数据
+            </summary>
+            <param name="MeMoId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:wpf页面设计WebAPI.Controllers.WaitController">
+            <summary>
+            待办事项统计控制器
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.#ctor(wpf页面设计WebAPI.DataModel.DailyContext,AutoMapper.IMapper)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="_db"></param>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.GetWaitData">
+            <summary>
+            返回首页面板数据(待办事项数据)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.GetWaitDataDetail">
+            <summary>
+            返回具体的待办事项数据(首页列表显示)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.GetWaitingDataDetail">
+            <summary>
+            返回具体的待办事项数据(待办事项页显示) (暂时不用)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.AddWaitData(wpf页面设计WebAPI.DTOs.AddWaitInfoDTO)">
+            <summary>
+            加入待办事项数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.EditWaitData(Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO)">
+            <summary>
+            修改待办事项数据
+            </summary>
+            <param name="WaitInfoDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.UpdateStatus(Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO)">
+            <summary>
+             修改待办事项的状态
+            </summary>
+            <param name="waitInfoDTO"></param>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.SearchWait(System.String,System.Nullable{System.Int32})">
+            <summary>
+            搜索待办事项数据
+            </summary>
+            <param name="title"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:wpf页面设计WebAPI.Controllers.WaitController.DeleteWaitData(System.Int32)">
+            <summary>
+            删除待办事项数据
+            </summary>
+            <param name="WaitId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:wpf页面设计WebAPI.DataModel.AccountInfo">
+            <summary>
+            登录账号数据模型
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.AccountInfo.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.AccountInfo.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.AccountInfo.Pwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="M:wpf页面设计WebAPI.DataModel.DailyContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{wpf页面设计WebAPI.DataModel.DailyContext})">
+            <summary>
+             构造函数
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.DailyContext.AccountInfos">
+            <summary>
+             账号
+            </summary>
+            virtua
+            延时加载
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.DailyContext.WaitInfos">
+            <summary>
+            代办事项
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.DailyContext.memoInfos">
+            <summary>
+            备忘录
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.MeMoInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DataModel.WaitInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:wpf页面设计WebAPI.DTOs.AccountInfoDTO">
+            <summary>
+            数据传输对象-->接收webapi数据和传输给业务数据
+             账号DTO(用来注册信息)
+            </summary>
+        </member>
+        <member name="T:wpf页面设计WebAPI.DTOs.AddWaitInfoDTO">
+            <summary>
+            添加待办事项
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DTOs.AddWaitInfoDTO.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:wpf页面设计WebAPI.DTOs.MeMoInfoDTO.TotalCount">
+            <summary>
+            备忘录总数
+            </summary>
+        </member>
+        <member name="T:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO">
+            <summary>
+            待办事项DTO
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.WaitId">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.TotalCount">
+            <summary>
+            待办事项总数
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.FinishCount">
+            <summary>
+            已完成数量
+            </summary>
+        </member>
+        <member name="P:Wpf页面设计_Prism_WebAPI_.DTOs.WaitInfoDTO.FinishPercent">
+            <summary>
+            完成比例
+            </summary>
+        </member>
+    </members>
+</doc>

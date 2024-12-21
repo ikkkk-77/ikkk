@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|d:\\c#wpf\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\controllers\\waitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|solutionrelative:wpf\u9875\u9762\u8BBE\u8BA1webapi\\controllers\\waitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|d:\\c#wpf\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\datamodel\\dailycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|solutionrelative:wpf\u9875\u9762\u8BBE\u8BA1webapi\\datamodel\\dailycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|d:\\c#wpf\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|solutionrelative:wpf\u9875\u9762\u8BBE\u8BA1webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|d:\\c#wpf\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|solutionrelative:wpf\u9875\u9762\u8BBE\u8BA1webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|d:\\c#wpf\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\wpf\u9875\u9762\u8BBE\u8BA1webapi\\controllers\\memocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{275A9708-B0F1-46EC-9F01-AE959C8A501E}|wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI.csproj|solutionrelative:wpf\u9875\u9762\u8BBE\u8BA1webapi\\controllers\\memocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-20T11:18:45.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DailyContext.cs",
+              "DocumentMoniker": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\DataModel\\DailyContext.cs",
+              "RelativeDocumentMoniker": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\DataModel\\DailyContext.cs",
+              "ToolTip": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\DataModel\\DailyContext.cs",
+              "RelativeToolTip": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\DataModel\\DailyContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T10:55:37.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Program.cs",
+              "ToolTip": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Program.cs",
+              "RelativeToolTip": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T18:15:43.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WaitController.cs",
+              "DocumentMoniker": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\WaitController.cs",
+              "RelativeDocumentMoniker": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\WaitController.cs",
+              "ToolTip": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\WaitController.cs",
+              "RelativeToolTip": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\WaitController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:40:45.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MeMoController.cs",
+              "DocumentMoniker": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\MeMoController.cs",
+              "RelativeDocumentMoniker": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\MeMoController.cs",
+              "ToolTip": "D:\\C#Wpf\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\MeMoController.cs",
+              "RelativeToolTip": "wpf\u9875\u9762\u8BBE\u8BA1WebAPI\\Controllers\\MeMoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:33:22.331Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

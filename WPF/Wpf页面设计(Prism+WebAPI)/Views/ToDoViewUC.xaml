@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="Wpf页面设计_Prism_WebAPI_.Views.ToDoViewUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf页面设计_Prism_WebAPI_.Views"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             FontFamily="微软雅黑"
+             d:DesignHeight="450" d:DesignWidth="800">
+<!--菜单栏-->
+    <md:DialogHost>
+<!--菜单栏(默认关闭)-->
+        <md:DrawerHost IsRightDrawerOpen="{Binding IsRightDrawerStatus}">
+            <!--画菜单栏-->
+            <md:DrawerHost.RightDrawerContent>
+                <!--内容-->
+                <DockPanel Width="300" LastChildFill="False">
+                    <TextBox Text="添加代办" FontWeight="Bold" FontSize="20" Margin="20,10" DockPanel.Dock="Top"/>
+
+                    <StackPanel Margin="20" DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock Text="状态:" Margin="0,0,5,0" VerticalAlignment="Center"></TextBlock>
+                        <ComboBox SelectedIndex="{Binding WaitDTO.Status}">
+                            <ComboBoxItem>代办</ComboBoxItem>
+                            <ComboBoxItem>已完成</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <TextBox md:HintAssist.Hint="请输入代办标题" Text="{Binding WaitDTO.Title}" Margin="20,0" DockPanel.Dock="Top"></TextBox>
+                    <TextBox md:HintAssist.Hint="请输入代办内容" Text="{Binding WaitDTO.Content}" Margin="20,10" DockPanel.Dock="Top" MinHeight="100"></TextBox>
+                    <!--按钮-->
+                    <Button Content="添加到代办" DockPanel.Dock="Top" Margin="20,0" Command="{Binding AddWaitDialogcmm}"></Button>
+                </DockPanel>
+            </md:DrawerHost.RightDrawerContent>
+
+            
+            
+<!--主体内容-->
+            <Grid>
+                <!--定义两行-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <!--第一行-->
+                <!--搜索框-->
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="15,0,0,0">
+                    <TextBlock Text="筛选:" Margin="10,0" VerticalAlignment="Center"></TextBlock>
+                    
+                    <!--搜索代办标题-->
+                    <TextBox md:HintAssist.Hint="查找待办事项.." Text="{Binding SearchTitle}" md:TextFieldAssist.HasClearButton="True" VerticalAlignment="Center">
+                        <!--回车后触发搜索--><!--
+                        <TextBox.InputBindings>
+                            <KeyBinding Key="Enter" Command="{Binding SearchWaitDatacmm}"></KeyBinding>
+                        </TextBox.InputBindings>-->
+                    </TextBox>
+                    
+                    <!--搜索代办状态-->
+                    <ComboBox SelectedIndex="{Binding SearchIndex}" Margin="10,0">
+                        <!--回车后触发搜索-->
+                        <!--<ComboBox.InputBindings>
+                            <KeyBinding Key="Enter" Command="{Binding SearchWaitDatacmm}"></KeyBinding>
+                        </ComboBox.InputBindings>-->
+                        <ComboBoxItem>全部</ComboBoxItem>
+                        <ComboBoxItem>代办</ComboBoxItem>
+                        <ComboBoxItem>已完成</ComboBoxItem>
+                    </ComboBox>
+
+                    <Button Margin="10,0" Command="{Binding SearchWaitDatacmm}">
+                        <md:PackIcon Kind="Search"></md:PackIcon>
+                    </Button>
+                </StackPanel>
+                
+                <!--添加代办(对话框)-->
+                <Button Content="添加代办" HorizontalAlignment="Right" Margin="10,5" Command="{Binding OpenWaitDialogcmm}"></Button>
+
+
+                <!--第二行-->
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+                    <ItemsControl HorizontalAlignment="Center" ItemsSource="{Binding WaitList}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <!--<UniformGrid Columns="5"></UniformGrid>-->
+                                <!--环绕面板（自动排列）-->
+                                <WrapPanel></WrapPanel>
+                            
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <md:TransitioningContent OpeningEffect="{md:TransitionEffect Kind=ExpandIn}">
+                                    <Border Width="220" Height="180" MaxWidth="250" Margin="8" Background="{Binding Color}" CornerRadius="5" >
+                                        <!--border样式(触发器)-->
+                                        <Border.Style>
+                                            <Style TargetType="Border">
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Effect">
+                                                            <Setter.Value>
+                                                                <DropShadowEffect Color="#dddddd"></DropShadowEffect>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Border.Style>
+
+                                        <!--内容-->
+                                        <Grid >
+                                            <!--定义两行-->
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"></RowDefinition>
+                                                <RowDefinition></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <!--内容-->
+                                            <TextBlock Text="{Binding Title}" Margin="10,5" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"></TextBlock>
+                                            <md:PopupBox HorizontalAlignment="Right" Panel.ZIndex="1">
+                                                <!--删除待办事项-->
+                                                <Button Content="删除" Command="{Binding DataContext.DeleteWaitDatacmm,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}}" 
+                                                        CommandParameter="{Binding}">
+                                                </Button>
+                                            </md:PopupBox>
+                                            <TextBlock Grid.Row="1" Text="{Binding Content}" FontSize="12" Margin="10,5"></TextBlock>
+
+                                            <!--画背景-->
+                                            <Canvas ClipToBounds="True" Grid.RowSpan="2">
+                                                <Border Canvas.Top="10" Canvas.Right="-50" Width="120" Height="120" Background="#ffffff" CornerRadius="100" Opacity="0.1"></Border>
+                                                <Border Canvas.Top="80" Canvas.Right="-30" Width="120" Height="120" Background="#ffffff" CornerRadius="100" Opacity="0.1"></Border>
+                                            </Canvas>
+                                        </Grid>
+                                    </Border>
+                                </md:TransitioningContent>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </md:DrawerHost>
+    </md:DialogHost>
+    
+    
+    
+</UserControl>
